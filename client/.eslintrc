@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
+    "@typescript-eslint/eslint-plugin"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json",
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true,
+      "modules": true
+    }
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  },
+  "rules": {
+    "react/jsx-wrap-multilines": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "@typescript-eslint/prefer-interface": "off",
+    "@typescript-eslint/type-annotation-spacing": "off",
+    "@typescript-eslint/explicit-function-return-type": "off",
+
+    "arrow-parens": "off",
+    "curly": ["error", "multi"],
+    "func-names": ["error", "never"],
+    "implicit-arrow-linebreak": "off",
+    "nonblock-statement-body-position": ["error", "below"]
+  }
+}
